@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,93 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <title>ESG Snikers</title>
 </head>
+
 <body>
+    <div id="header">
+        <div class="header_cont">
+            <div class="header_cont_logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="header_cont_nav">
+                <a href="" class="nav_comp">About</a>
+                <a href="" class="nav_comp">Cart</a>
+                <a href="" class="nav_comp">Store</a>
+                <a href="" class="nav_comp">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div id="main_containter">
+        <div class="main_containter_content">
+            <div class="description">
+                <div class="description_header"></div>
+                <div class="description_article"></div>
+            </div>
+            <div class="object">
+                <div class="object_container">
+                    <div class="object_container_border">
+                        <div class="object_container_brand">
+                            <img src="./images/image 4.png" alt="">
+                        </div>
+                        <div class="object_container_image">
+                            <img src="./images/adidasRU22.png" alt="">
+                        </div>
+                        <div class="object_container_name">
+                            <span class="name_decoration">Running Ultraboost</span><span
+                                class="name_number_decoration">22</span>
+                        </div>
+                        <div class="buttons">
+                            <button class="buy_button">Buy</button>
+                            <button class="more_button"> More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_container">
+                    <div class="feature_line_1">
+                        <div class="territory_expansion_1">
+                            <div class="feature_text">
+                                <span class="feature_name">DESIGN</span>
+                                <span class="feature_itself">Low-profile</span>
+                            </div>
+                            <div class="mirror_line">
+                                <div class="sup_line_1"></div>
+                                <div class="sup_line_2"></div>
+                            </div>
+                        </div>
+                        <div class="territory_expansion_2">
+                            <div class="feature_text">
+                                <span class="feature_name">Fastening</span>
+                                <span class="feature_itself">Lace-up</span>
+                            </div>
+                            <div class="sup_line_1"></div>
+                            <div class="sup_line_2"></div>
+                        </div>
+                        <div class="territory_expansion_3">
+                            <div class="feature_text">
+                                <span class="feature_name">Cuff</span>
+                                <span class="feature_itself">Sock-like</span>
+                            </div>
+                            <div class="sup_line_1"></div>
+                            <div class="sup_line_2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".object_container_border"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1
+        });
+
+        //It also supports NodeList
+        // VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
     <script src="./app.js"></script>
 </body>
+
 </html>
